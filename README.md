@@ -2,7 +2,24 @@
 
 ## Deliverable
 
-Necessary a docker-compose file.
+Necessary a docker-compose file to run this code.
+
+### Setup
+
+Use the following command to build the API, installing the requirements.
+```
+docker-compose build
+```
+
+Use the following command to apply the migrations.
+```
+docker-compose run web python myapp/manage.py makemigrations
+```
+
+Use the following command to run the API.
+```
+docker-compose up
+```
 
 ## Questions to be answered
 
